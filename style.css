@@ -39,14 +39,8 @@ textarea {
   resize: vertical;
 }
 
-/* Проверить а надо ли? */
-*::focus {
-  outline: none;
-}
-
 button {
   border: none;
-  /* outline: none   */
   cursor: pointer;
 }
 
