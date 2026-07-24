@@ -3,7 +3,7 @@ Fancybox.bind('[data-fancybox="video-gallery"]', {
 		transition: "slide",
 	},
 
-});
+})
 
 const arrowUpBtn = document.querySelector('.block__arrow__up')
 
@@ -11,6 +11,7 @@ window.addEventListener('scroll', ()=>{
 	if (window.pageYOffset > 500) {
 		arrowUpBtn.classList.add('block__arrow__up__active')
 	}
+
 	else {
 		arrowUpBtn.classList.remove('block__arrow__up__active')
 	}
@@ -34,7 +35,6 @@ const myModalSuccess = new bootstrap.Modal('#modalSuccess')
 
 /* Показывает название, фото и цену товара на тот который кликнул */
 body.addEventListener('click', (e)=>{
-
 	const showModalOrder = (header, img, price) => {
 		myModalOrder.show()
 		myModalHeader.textContent = header.textContent
@@ -60,5 +60,4 @@ body.addEventListener('click', (e)=>{
 
 		showModalOrder(cardHeader, cardImg, cardPrice)
 	}
-
 })
